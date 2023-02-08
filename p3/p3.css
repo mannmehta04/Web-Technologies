@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+    font-size: medium;
+}
+
+body > form > table{
+    width:40%;
+    height: 40%;
+}
+
+h2, h4{
+    color: red;
+}
+
+p{
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 38%;
+    font-size: larger;
+    font-style:italic;
+}
