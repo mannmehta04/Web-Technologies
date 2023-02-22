@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Practical 5.1</title>
+<style>
+ol{
+color:black;
+}
+body{
+counter-reset:f_counter;
+}
+li{
+list-style:none;	
+}
+ol>li:before{
+counter-reset:s_counter;
+counter-increment : f_counter;
+content:"Chapter "counter(f_counter)". ";}
+
+ol>li>ul>li:before{
+counter-reset:t_counter;
+counter-increment : s_counter;
+content:" "counter(f_counter)". "counter(s_counter)" ";}
+
+ol>li>ul>li>ul>li:before{
+counter-increment : fr_counter;
+counter-increment : t_counter;
+content:" "counter(f_counter)". "counter(s_counter)"."counter(t_counter)" ";}
+
+ol>li>ul>li>ul>li>ul>li:before{
+counter-increment : fr_counter;
+content:" "counter(f_counter)". "counter(s_counter)"."counter(t_counter)"."counter(fr_counter)" ";}
+
+</style>
+</head>
+<body>
+	Title: Web Technologies <br>
+	Table of Content
+<ol>
+<li>Html</li>
+<li>Css
+	<ul>
+	<li>Introduction</li>
+	<li>Adding Style Sheets
+		<ul>
+			<li>External
+				<ul>
+					<li>External Style Sheets are Useful.</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>Browser Incompatibility</li>
+	</ul>
+</li>
+<li>Xml</li>
+</ol>
+</body>
+<footer>
+	<br><br><br>
+	Completed by 22CP312, Mann N. Mehta
+</footer>
+</html>

@@ -1,0 +1,84 @@
+body{
+    background-color: lightcoral;
+}
+
+header{
+    font-size: 150%;
+    margin: 2%;
+    text-align:center;
+}
+
+#list{
+    list-style: circle;
+}
+
+.itemsBorder{
+    border-top: 2px;
+    border-top-style: dashed;
+    border-top-color:gray;
+    border-top-right-radius: 10px;
+    width: 10%;
+    
+    border-right: 2px;
+    border-right-style: dashed;
+    border-right-color:gray;
+}
+
+.p1{
+    margin-left: 5%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-indent: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#test_id{
+    font-family: 'Times New Roman', Times, serif;
+    color: royalblue;
+}
+
+#test_id > p{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: royalblue;
+}
+
+.test_class{
+    margin-left: 25%;
+}
+
+.test_class > p{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: mediumblue;
+}
+
+.test_class > img{
+    position: absolute;
+    height: 45%;
+    width: 42%;
+    z-index: -1;
+    transition: ease-out 500ms;
+}
+
+.test_class > img:hover{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    z-index: 1;
+    
+    -webkit-transition: ease-out 500ms;
+    -moz-transition: ease-out 500ms;
+    transition: ease-out 500ms;
+}
+
+.nametag{
+    position: absolute;
+    float: right;
+    margin: 40px;
+}

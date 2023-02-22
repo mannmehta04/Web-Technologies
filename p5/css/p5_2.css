@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 4px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    padding: 5px 0px;
+    background-color: #2c9722;
+}
+
+header > h1 {
+    text-align: center
+}
+
+aside {
+    width: 20%;
+    height: 720px;
+    background-color: #92d481;
+}
+
+#container {
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+#bottom {
+    position: relative;
+    top: 380px;
+    left: 50px;
+}
+
+section {
+    background-color: #b3f097;
+    position: absolute;
+    left: 273px;
+    top: 40px;
+    z-index: -1;
+    width: 80%;
+    height: 730px;
+}
+
+section > p {
+    padding: 100px;
+}
