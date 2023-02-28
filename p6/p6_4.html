@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+    var num1 = parseInt(prompt("Enter the first number:"));
+    var num2 = parseInt(prompt("Enter the second number:"));
+
+    for (var i = num1; i <= num2; i++) {
+        var isPrime = true;
+        for (var j = 2; j <= Math.sqrt(i); j++) {
+            if (i % j == 0) {
+            isPrime = false;
+            break;
+            }
+        }
+
+        if (isPrime && i > 1) {
+            document.writeln(i);
+        }
+    }
+
+    </script>
+    <p align="center"><i>Completed by 22CP312, Mann Mehta.</i></p>
+    </body>
+</html>

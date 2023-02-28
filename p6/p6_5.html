@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+
+        var arr1 = [10, 20, 30];
+        var arr2 = [25, 45, 60];
+
+        var concatenatedArray = arr1.concat(arr2);
+        document.writeln("Concatenated array: " + concatenatedArray+"<br><br>");
+
+        var sortedArray = concatenatedArray.sort();
+        document.writeln("Sorted array: " + sortedArray+"<br><br>");
+
+        var reversedArray = sortedArray.reverse();
+        document.writeln("Reversed array: " + reversedArray+"<br><br>");
+
+        var index = reversedArray.indexOf(45);
+        document.writeln("Index of 45: " + index+"<br><br>");
+
+        var poppedElement = reversedArray.pop();
+        document.writeln("Popped element: " + poppedElement+"<br>");
+        document.writeln("Array after pop: " + reversedArray+"<br><br>");
+
+        reversedArray.push(12);
+        document.writeln("Array after push: " + reversedArray+"<br>");
+
+    </script>
+    <p align="center"><i>Completed by 22CP312, Mann Mehta.</i></p>
+    </body>
+</html>
