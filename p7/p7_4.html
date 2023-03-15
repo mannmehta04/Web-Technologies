@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+        var edgeId, foxId;
+        edgeId = navigator.userAgent.indexOf("Edg");
+        foxId = navigator.userAgent.indexOf("Mozilla");
+
+        if(edgeId != -1 ){
+            location.href = "pageForEdge.html";
+        }
+        else if(foxId != -1 ){
+            location.href = "pageForFox.html";
+        }
+        else {
+            document.writeln("Selected Browser is not supported.");
+        }
+    </script>
+    </body>
+</html>

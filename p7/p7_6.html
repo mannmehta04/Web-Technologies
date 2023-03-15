@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 6</title>
+</head>
+<body onload="onLoad()">
+    <p>Select Laptop Series</p>
+    <select name="series" id="series" onchange="onOptionChange()">
+        <option value="0" disabled selected>Select Laptop Series</option>
+    </select>
+
+    <p>Select Laptop...</p>
+    <select name="laptop" id="laptop">
+        <option value="0" disabled selected>Select Laptop...</option>
+    </select>
+    <script>
+        var rangeNumber = new Object();
+        rangeNumber['TUF'] = ['Asus TUF F15', 'Asus TUF F17', 'Asus TUF A15', 'Asus TUF A17'];
+        rangeNumber['ROG'] = ['Asus ROG Strix G15', 'Asus ROG Strix G16', 'Asus ROG Strix G17', 'Asus ROG Strix G18'];
+
+        function onLoad() {
+            var option = "";
+            for (i in rangeNumber) {
+                option += "<option value=" + i + " >" + i + "</option>";
+            }
+            document.getElementById('series').innerHTML = option;
+            onOptionChange();
+        }
+
+        function onOptionChange() {
+            var selectedValue = document.getElementById('series').value;
+            var option = "";
+            for (i in rangeNumber[selectedValue]) {
+                option += "<option value=" + rangeNumber[selectedValue][i] + " >" + rangeNumber[selectedValue][i] + "</option>";
+            }
+            document.getElementById('laptop').innerHTML = option;
+        }
+    </script>
+    <br><br><br><br><br>
+    <p><i>Completed by 22CP312, Mann Mehta.</i></p>
+</body>
+
+</html>
