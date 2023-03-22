@@ -1,0 +1,6 @@
+<!ELEMENT Movies_data (Movies)*>
+<!ELEMENT Movies (name,director,genere)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT genere (#PCDATA)>
+<!ATTLIST Movies Ratings CDATA #REQUIRED>
